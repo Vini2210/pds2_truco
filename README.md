@@ -11,6 +11,7 @@ User Stories:
 2) Como jogador eu quero ser capaz de receber minhas cartas para poder jogá-las a cada rodada. 
 (o programa tem que distribuir as cartas aleatoriamente para cada jogador)
 (uma vez que o jogador recebeu suas cartas, ele tem que ser capaz de escolher uma para jogar)
+(o programa deve imprimir a mão da pessoa e outra opções pertinentes)
 
 3) Como jogador eu quero ser capaz de saber o vencedor de cada ponto e da rodada. 
 (o programa deve ser capaz de comparar as cartas jogadas, informar a dupla ganhadora e atribuir os pontos corretamente)
