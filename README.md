@@ -5,10 +5,10 @@ Webert Leão Dos Reis De Carvalho - 2021086539
 
 User Stories:
 
-1)Como jogador eu quero ser capaz de acessar o placar da partida, para saber quem está  ganhando. 
+1) Como jogador eu quero ser capaz de acessar o placar da partida, para saber quem está ganhando. 
 (Implementar um comando que o jogador pode dar durante sua vez que irá retornar o placar atual da partida)
 
-2)Como jogador eu quero ser capaz de receber minhas cartas para poder jogá-las a cada rodada. 
+2) Como jogador eu quero ser capaz de receber minhas cartas para poder jogá-las a cada rodada. 
 (o programa tem que distribuir as cartas aleatoriamente para cada jogador)
 (uma vez que o jogador recebeu suas cartas, ele tem que ser capaz de escolher uma para jogar)
 
