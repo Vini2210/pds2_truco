@@ -4,6 +4,7 @@ Vinícius Coimbra Passos - 2017052730
 Webert Leão Dos Reis De Carvalho - 2021086539 
 
 User Stories:
+
 1)Como jogador eu quero ser capaz de acessar o placar da partida, para saber quem está  ganhando. 
 (Implementar um comando que o jogador pode dar durante sua vez que irá retornar o placar atual da partida)
 
