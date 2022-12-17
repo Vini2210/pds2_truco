@@ -3,24 +3,42 @@
 Vinícius Coimbra Passos - 2017052730 
 Webert Leão Dos Reis De Carvalho - 2021086539 
 
-User Stories:
+Definições:
+    Turno: É o turno de uma rodada, define qual jogador vai jogar, se o turno mudar, 
+    significa que é a vez do outro jogador
 
-1) Como jogador eu quero ser capaz de acessar o placar da partida, para saber quem está ganhando. 
-(Implementar um comando que o jogador pode dar durante sua vez que irá retornar o placar atual da partida)
+Possui 4 classes:
+    Carta - Define o que compõe uma carta: Numero, naipe e ponto.
 
-2) Como jogador eu quero ser capaz de receber minhas cartas para poder jogá-las a cada rodada. 
-(o programa tem que distribuir as cartas aleatoriamente para cada jogador)
-(uma vez que o jogador recebeu suas cartas, ele tem que ser capaz de escolher uma para jogar)
-(o programa deve imprimir a mão da pessoa e outra opções pertinentes)
+    Baralho - Define o que compõe o baralho: Guarda as cartas, embaralha as cartas,
+    retira uma carta do baralho, adiciona uma carta no baralho.
 
-3) Como jogador eu quero ser capaz de saber o vencedor de cada ponto e da rodada. 
-(o programa deve ser capaz de comparar as cartas jogadas, informar a dupla ganhadora e atribuir os pontos corretamente)
+    Jogador - Define o que compõe um jogador: O nome do jogador, as cartas que ele recebeu,
+    quantos pontos ele tem na rodada inicial e quantos pontos ele tem no jogo.
 
-4) Como jogador eu quero ser capaz de aumentar a aposta da rodada.
-(durante sua vez, através de um comando jogador deve ser capaz de pedir "truco", o que aumentará o número de pontos da rodada)
+    Jogo - Define a classe que gerencia o jogo, ele guarda as informações sobre os jogadores que
+    estão jogando, de quem é a vez de jogar, quantos pontos a rodada está valendo (aumentada pelo Truco),
+    quem venceu a primeira rodada, o baralho que está sendo distruibido, distribuir as cartas e verificar quem
+    venceu o turno, a rodada e o jogo.
 
-5) Como jogador eu quero que mude o primeiro a jogar a cada rodada.
-(a cada rodada o programa deve ser capaz de alterar o primeiro jogador)
+Observações:
+    - A ordem dos jogadores é alternada a cada rodada.
 
-6) Como jogador eu quero ser capaz de desistir do ponto.
-(durante sua vez o jogador, através de um comando, deve ser capaz de desistir da rodada) 
+    - Após a melhor de 3, o Jogador 1 sempre começa primeiro.
+
+    - É possível trucar e aumentar o truco até que o valor da rodada seja 12 pontos.
+
+    - Caso um jogador aceite o truco, o outro aumente, e ele desiste, o outro jogador recebe a pontuação 
+    do último truco aceitado (no caso deste exemplo, receberia 3 pontos).
+
+Funções principais:
+    - Jogo::novaRodada()
+        Gerencia uma rodada, começa inicializando o baralho, limpando a mão dos jogadores e distribuindo as cartas
+        da rodada. O jogador 1 começa jogando e a ordem vai alternando entre os dois jogadores durante a rodada.
+        Essa função verifica e chama as ações dos jogadores (Truco, Desistir, Placar, Joga uma carta).
+
+    O objetivo das outras funções são triviais e estão comentadas em cima de cada função no código.
+
+Execução utilizando um terminal com GCC:
+> g++ .\main.cpp .\jogador.cpp .\jogo.cpp .\carta.cpp .\baralho.cpp -o programa
+> ./programa
