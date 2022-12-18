@@ -41,4 +41,5 @@ Funções principais:
 
 Execução utilizando um terminal com GCC:
 > g++ .\main.cpp .\jogador.cpp .\jogo.cpp .\carta.cpp .\baralho.cpp -o programa
+
 > ./programa
