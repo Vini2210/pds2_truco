@@ -1,3 +1,9 @@
+Integrantes do grupo:
+>Vinícius Coimbra Passos 2017052730
+
+>Webert Leão dos reis de carvalho -2021086539
+
+
 Informações importantes do código:
 
 Definições:
@@ -38,4 +44,6 @@ Funções principais:
 
 Exemplo de execução utilizando um terminal com GCC:
 > g++ .\main.cpp .\jogador.cpp .\jogo.cpp .\carta.cpp .\baralho.cpp -o programa
+
+
 > ./programa
